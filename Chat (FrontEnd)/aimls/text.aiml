@@ -1,0 +1,230 @@
+<aiml>
+    <category>
+        <pattern>HI</pattern>
+        <template>HI HOW CAN I HELP YOU</template>
+    </category>
+
+    <category>
+        <pattern>WHICH BOOKS HAVE I BORROWED</pattern>
+        <template>
+            <think>
+                <set name="list">true</set>
+            </think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT BOOKS HAVE I BORROWED</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH BOOKS DID I BORROW</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE THE BOOKS I'VE BORROWED</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH BOOKS HAVE I TAKEN OUT</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH BOOKS DID I CHECK OUT</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT BOOKS AM I BORROWING</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH BOOKS ARE IN MY BORROWED LIST</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT BOOKS DO I HAVE ON LOAN</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH BOOKS HAVE I LOANED</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE THE BOOKS THAT I BORROWED</pattern>
+        <template>
+            <srai>
+                WHICH BOOKS HAVE I BORROWED
+            </srai>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>ADD BOOK *</pattern>
+        <template>
+            Please go to third tab "Add a book" to add a new book to library ⬆️
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD A BOOK *</pattern>
+        <template>
+            <srai>
+                ADD BOOK <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD THE BOOK *</pattern>
+        <template>
+            <srai>
+                ADD BOOK <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD BOOK TO LIBRARY *</pattern>
+        <template>
+            <srai>
+                ADD BOOK <star/>
+            </srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ADD PERSON *</pattern>
+        <template>
+            Please go to second tab "Register a Student" to register a new student ⬆️
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD A PERSON *</pattern>
+        <template>
+            <srai>
+                ADD PERSON <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>REGISTER PERSON *</pattern>
+        <template>
+            <srai>
+                ADD PERSON <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD NEW MEMBER *</pattern>
+        <template>
+            <srai>
+                ADD PERSON <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BORROW BOOK *</pattern>
+        <template>
+            Go to library -> Scan your Student Card -> Scan the book you want to borrow 
+            and that's it 😉
+        </template>
+    </category>
+
+    <category>
+        <pattern>CHECK OUT BOOK *</pattern>
+        <template>
+            <srai>
+                BORROW BOOK <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAKE BOOK *</pattern>
+        <template>
+            <srai>
+                BORROW BOOK <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RETURN BOOK *</pattern>
+        <template>
+            to return a book Go to library -> Scan your Student card -> Scan the book -> Place the book back in its place 🤓
+        </template>
+    </category>
+
+    <category>
+        <pattern>BRING BACK BOOK *</pattern>
+        <template>
+            <srai>
+                RETURN BOOK <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RETURN LIBRARY BOOK *</pattern>
+        <template>
+            <srai>
+                RETURN BOOK <star/>
+            </srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>LOGOUT</pattern>
+        <template>
+            Bye!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            unknown
+        </template>
+    </category>
+</aiml>
